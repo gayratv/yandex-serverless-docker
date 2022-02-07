@@ -1,7 +1,5 @@
 #!/bin/sh
 #source ../.env
-cd s3-compress-after-presign
-pwd
 export $(grep -v '^#' main.env | xargs -d '\n')
 
 echo "Удалить $FUNCTION_NAME"
