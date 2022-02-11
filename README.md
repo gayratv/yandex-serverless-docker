@@ -99,3 +99,11 @@ yc container registry configure-docker
 ### Проверка
 
 Зайдите в web консоль, перейдите в  "Serverless Containers" и нажмите на ссылку только что развернутого контейнера.
+
+P.S. обратите внимание на запись в index.js:
+```
+app.listen(process.env.PORT, ...
+```
+При запуске в Yandex контейнер получает ряд предварительно настроенных переменных окружения.[документация](https://cloud.yandex.ru/docs/serverless-containers/concepts/runtime) 
+
+В настоящий момент контейнер получает PORT, которую нельзя переопределить.
