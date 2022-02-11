@@ -1,6 +1,3 @@
 .idea
-deploy/.terraform
-deploy/.terraform.lock.hcl
-*.tfstate*
 node_modules
 contid.env
